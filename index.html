@@ -12,16 +12,26 @@
 body{
 font-family:'Trebuchet MS', sans-serif;
 margin:0;
-color:#f7e6c7;
+color:white;
 text-align:center;
-overflow-x:hidden;
+
 background:
-linear-gradient(rgba(20,10,5,.85), rgba(35,18,10,.92)),
-url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
-background-color:#3b2415;
-background-size:cover;
-background-position:center;
-background-attachment:fixed;
+linear-gradient(
+135deg,
+#ff8fd1,
+#ff4fa3,
+#ffb3e6,
+#ff6fb5
+);
+
+background-size:400% 400%;
+animation:partyGradient 12s ease infinite;
+}
+
+@keyframes partyGradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
 }
 
 header{margin-top:40px}
