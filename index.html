@@ -241,7 +241,7 @@ function initPlayers() {
     if (saved) {
         players = JSON.parse(saved);
     } else {
-        for (let i = 1; i <= 9; i++) { // Default to 8 players
+        for (let i = 1; i <= 9; i++) { // Default to 9 players
             players.push({ name: "Player " + i, drinks: 0, tasks: [], completed: [] });
         }
         assignTasks();
